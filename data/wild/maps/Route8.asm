@@ -7,7 +7,7 @@ Route8Mons:
 	db 19, ABRA
 	db 24, PIDGEOTTO
 	db 19, JIGGLYPUFF
-	db 24, JIGGLYPUFF
+	db 24, MEOWTH
 	db 20, KADABRA
 	db 27, KADABRA
 	end_grass_wildmons

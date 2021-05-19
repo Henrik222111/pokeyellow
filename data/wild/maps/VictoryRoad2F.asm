@@ -9,7 +9,7 @@ PlateauMons2:
 	db 45, ONIX
 	db 47, ONIX
 	db 39, MACHOKE
-	db 42, MACHOKE
+	db 47, HITMONLEE
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

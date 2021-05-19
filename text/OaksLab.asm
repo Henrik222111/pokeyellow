@@ -399,3 +399,8 @@ _OaksLabText_1d405::
 	text "I study #MON as"
 	line "PROF.OAK's AIDE."
 	done
+
+_GotMewText::
+	text "<PLAYER> got Mew"
+	line "from PROF.OAK."
+	prompt

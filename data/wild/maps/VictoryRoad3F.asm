@@ -9,7 +9,7 @@ PlateauMons3:
 	db 42, MACHOKE
 	db 45, MACHOKE
 	db 47, GRAVELER
-	db 47, GRAVELER
+	db 47, HITMONCHAN
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

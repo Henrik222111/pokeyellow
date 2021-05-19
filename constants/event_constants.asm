@@ -791,4 +791,6 @@
 
 ; End of events
 	const_next $A00
+	const EVENT_GOT_MEW_FROM_OAK
+	const_next $A01
 NUM_EVENTS EQU const_value

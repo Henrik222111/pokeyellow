@@ -8,8 +8,8 @@ Route24Mons:
 	db 15, PIDGEY
 	db 13, VENONAT
 	db 16, VENONAT
-	db 17, PIDGEY
 	db 17, PIDGEOTTO
+	db 17, SQUIRTLE
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

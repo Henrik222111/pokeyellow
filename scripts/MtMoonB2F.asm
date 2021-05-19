@@ -535,7 +535,7 @@ MtMoon3Text7:
 	ld a, [wCurrentMenuItem]
 	and a
 	jr nz, .asm_4a0ab
-	lb bc, DOME_FOSSIL, 1
+	lb bc, DOME_FOSSIL, 2
 	call GiveItem
 	jp nc, MtMoon3Script_4a0fd
 	call MtMoon3Script_4a0f0
@@ -543,7 +543,7 @@ MtMoon3Text7:
 	ld [wMissableObjectIndex], a
 	predef HideObject
 	SetEvent EVENT_GOT_DOME_FOSSIL
-	ld a, $4
+	ld a, $0
 	call MtMoon3Script_49ce5
 .asm_4a0ab
 	jp TextScriptEnd
@@ -562,7 +562,7 @@ MtMoon3Text8:
 	ld a, [wCurrentMenuItem]
 	and a
 	jr nz, .asm_4a0e8
-	lb bc, HELIX_FOSSIL, 1
+	lb bc, HELIX_FOSSIL, 2
 	call GiveItem
 	jp nc, MtMoon3Script_4a0fd
 	call MtMoon3Script_4a0f0
@@ -570,7 +570,7 @@ MtMoon3Text8:
 	ld [wMissableObjectIndex], a
 	predef HideObject
 	SetEvent EVENT_GOT_HELIX_FOSSIL
-	ld a, $4
+	ld a, $0
 	call MtMoon3Script_49ce5
 .asm_4a0e8
 	jp TextScriptEnd

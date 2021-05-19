@@ -9,7 +9,7 @@ IslandMonsB4:
 	db 27, GOLBAT
 	db 45, ZUBAT
 	db 30, DEWGONG
-	db 34, DEWGONG
+	db 34, JYNX
 	end_grass_wildmons
 
 	def_water_wildmons 5 ; encounter rate

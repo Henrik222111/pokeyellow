@@ -812,6 +812,29 @@ OaksLabText3:
 	ld a, $1
 	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
 	predef DisplayDexRating
+	CheckEvent EVENT_GOT_MEW_FROM_OAK
+	jp nz, .asm_1ca6f
+	ldh a, [hDexRatingNumMonsOwned]
+	cp 150
+	jp c, .asm_1ca6f
+	
+	ld a, MEW
+	ld [wd11e], a
+	ld [wcf91], a
+	call GetMonName
+	ld a, $1
+	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
+	lb bc, MEW, 70
+	call GivePokemon
+	jp nc, TextScriptEnd
+	ld a, [wAddedToParty]
+	and a
+	call z, WaitForTextScrollButtonPress
+	ld a, $1
+	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
+	ld hl, GotMewText
+	call PrintText
+	SetEvent EVENT_GOT_MEW_FROM_OAK
 	jp .asm_1ca6f
 .asm_1c9ec
 	ld b, POKE_BALL
@@ -1142,4 +1165,8 @@ OaksLabText9:
 
 OaksLabText_1c31d:
 	text_far _OaksLabText_1d405
+	text_end
+
+GotMewText:
+	text_far _GotMewText
 	text_end

@@ -9,7 +9,7 @@ IslandMonsB3:
 	db 31, KRABBY
 	db 30, SEEL
 	db 28, DEWGONG
-	db 32, DEWGONG
+	db 32, JYNX
 	end_grass_wildmons
 
 	def_water_wildmons 5 ; encounter rate

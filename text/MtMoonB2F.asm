@@ -32,10 +32,10 @@ _MtMoon3Text_49f64::
 	done
 
 _MtMoon3Text_49f6f::
-	text "<PLAYER> got the"
+	text "<PLAYER> got two"
 	line "@"
 	text_ram wcf4b
-	text "!@"
+	text "s!@"
 	text_end
 
 _MtMoon3Text_49f7f::
